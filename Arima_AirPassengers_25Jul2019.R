@@ -8,7 +8,7 @@ data(AirPassengers)
 #Check class, it should be Time Series (ts)
 class(AirPassengers)
 
-#ts(values,start=c(1949,1),end=c(1960,3),frequency=12)
+#ts(AirPassengers,start=c(1949,1),end=c(1960,12),frequency=12)
 
 #Check First row
 start(AirPassengers)
@@ -48,7 +48,7 @@ boxplot(AirPassengers~cycle(AirPassengers))
 adf.test(AirPassengers, alternative="stationary", k=0)
 adf.test(diff(log(AirPassengers)), alternative="stationary", k=0)
 
-#It is stationary to do run ARIMA
+#It is Not stationary to do run ARIMA
 
 #Find ACF
 acf(AirPassengers)
@@ -71,6 +71,7 @@ pacf(diff(log(AirPassengers))) #q term or Moving average
 
 pred_train <- predict(fit, )
 pred <- predict(fit, n.ahead = 10*12)
+pred <- fit(fit)
 
 
 ts.plot(AirPassengers,2.718^pred$pred, lty = c(1,3))

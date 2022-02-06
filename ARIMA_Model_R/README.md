@@ -17,7 +17,7 @@ transition: rotate
 Links
 ========================================================
 
-YouTube Channel - [www.youtube.com/fxexcel](http://www.youtube.com/fxexcel) 
+YouTube Channel - [ARIMA MODEL WITH R](https://www.youtube.com/watch?v=zB_0Yxxs0b4) 
 
 Download Code and Data - [https://github.com/FunXExcel/YouTube-Working-Files](https://github.com/FunXExcel/YouTube-Working-Files)
 
